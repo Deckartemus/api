@@ -1,17 +1,10 @@
 <template>
-  <view class="container">
-    <text class="text-color-primary">App</text>
-  </view>
+  <setup/>
 </template>
 
-<style>
-.container {
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
+<script>
+import Setup from './src/setup';
+export default {
+  components: { Setup },
 }
-.text-color-primary {
-  color: blue;
-}
-</style>
+</script>
