@@ -7,7 +7,10 @@
 
 <script>
 import Vue from "vue-native-core";
+import { VueNativeBase } from "native-base";
 import App from "./index";
+
+Vue.use(VueNativeBase);
 
 export default {
   components: { App }

@@ -11,11 +11,34 @@ import {
 import React from "react";
 import login from "./screens/login";
 import dashboard from "./screens/dashboard";
+import chat from "./screens/chat";
 
 const StackNavigator = createStackNavigator(
   {
-    Login: login,
-    Dashboard: dashboard,
+    Login: {
+      screen: login,
+      navigationOptions: ({navigation}) => {
+        return {
+          headerTitle: 'Hitchdesk'
+        }
+      }
+    },
+    Dashboard: {
+      screen: dashboard,
+      navigationOptions: ({navigation}) => {
+        return {
+          headerTitle: 'Dashboard'
+        }
+      }
+    },
+    Chat: {
+      screen: chat,
+      navigationOptions: ({navigation}) => {
+        return {
+          headerTitle: 'Chat'
+        }
+      }
+    }
   },
   {
     initialRouteName: 'Login',

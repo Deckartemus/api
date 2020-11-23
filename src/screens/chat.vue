@@ -1,8 +1,6 @@
 <template>
   <view class="container">
-      <text>Dashboard</text>
-      <button title="move to chat" @press='goToChat'></button>
-      <button title='sign out' @press='logoutUser'></button>  
+      <text>Chat</text>
   </view>
 </template>
 
@@ -14,12 +12,7 @@ export default {
         }
     },
     methods: {
-      logoutUser() {
-        this.navigation.goBack()
-      },
-      goToChat() {
-        this.navigation.navigate('Chat')
-      }
+        //
     }
 }
 </script>
